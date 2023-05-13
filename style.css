@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+#navbar{
+    background-color: #000;
+    height: 56px;
+    padding-top: 6px;
+    padding-top: 6px;
+}
+
+#button-addon2{
+    background-color: #AD7BE9;
+}
+
+#userimg{
+    border-radius: 10px;
+}
+
+#logo_head{
+    font-weight: bolder;
+}
+
+:root{
+    --offcanvas-width:270px;
+    --navbarHeight:56px;
+}
+
+#offcanvasExample{
+    width: var(--offcanvas-width);
+}
+
+/* media query for fixing the offcanvas on big screens*/
+@media (min-width:992px) {
+
+    .offcanvas-backdrop::before {
+        display: none;
+    }
+
+    #offcanvasExample{
+        transform: none;
+        visibility: visible;
+        top: var(--navbarHeight);
+        height: calc(100% - var(--navbarHeight));
+    }
+
+    body{
+        overflow: auto;
+    }
+
+    main{
+        margin-left: var(--offcanvas-width);
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+      max-width: 100%;
+    }
+  }
+  
+@media (max-width: 576px) {
+    .card {
+      padding: 0.5rem;
+    }
+}
+  
+@media (max-width: 992px){
+    #myChart-1{
+        padding-top: 1px;
+    }
+}
